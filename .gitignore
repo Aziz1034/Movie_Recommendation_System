@@ -1,0 +1,33 @@
+# Python virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Local data files and zip archives (reproducible via python data_loader.py)
+data/*.zip
+data/ml-latest-small/
+data/*.csv
+!data/.gitkeep
+
+# Generated model binaries
+models/*.joblib
+!models/.gitkeep
+
+# Track generated evaluation reports
+!reports/evaluation_report.md
+!reports/evaluation_results.json
+!reports/.gitkeep
+
+# Environment variables & editor files
+.env
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

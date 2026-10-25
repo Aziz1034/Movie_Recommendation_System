@@ -1,0 +1,20 @@
+{
+  "dataset_name": "MovieLens Latest Small",
+  "total_movies_in_dataset": 9742,
+  "total_ratings_in_dataset": 100836,
+  "evaluated_sample_size": 100,
+  "top_k": 10,
+  "metrics": {
+    "mean_metadata_cosine_similarity": 0.5647,
+    "mean_genre_jaccard_similarity": 0.8945,
+    "mean_intra_list_diversity": 0.3217,
+    "user_co_rating_positive_ratio": 0.7022,
+    "dataset_baseline_mean_rating": 3.26,
+    "evaluated_user_co_rating_instances": 630
+  },
+  "interpretation": {
+    "cosine_similarity_notice": "Metadata cosine similarity reflects keyword and genre vector alignment, not actual recommendation accuracy or user conversion rate.",
+    "genre_jaccard_notice": "Genre Jaccard index verifies that recommendations preserve the semantic genre profile of the seed movie without severe category drift.",
+    "user_validation_notice": "User co-rating positive ratio evaluates actual historical ratings: for users who loved the seed movie (>=4.0), it measures the proportion of recommended movies they also rated >=3.5."
+  }
+}
